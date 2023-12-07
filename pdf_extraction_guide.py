@@ -50,16 +50,16 @@ for root, dirs, files in os.walk(pdf_folder):
                 #The first text search looks for the following key words and labels the following doc type 1-4 and prints True to found_text
                 #If nothing is found later prints false which results in an error outcome for later
                 doc_type = None
-                if "CONDITION REPORT" in text:
+                if "1" in text:
                     doc_type = "1"
                     found_text = True
-                elif "CERTIFICATE" in text:
+                elif "2" in text:
                     doc_type = "2"
                     found_text = True
-                elif "ELECTRICAL" in text:
+                elif "3" in text:
                     doc_type = "3"
                     found_text = True
-                elif "REPORT" in text:
+                elif "4" in text:
                     doc_type = "4"
                     found_text = True
 
